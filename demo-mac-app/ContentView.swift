@@ -10,8 +10,11 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        let point = CGPoint(x: 200, y: 100)
+        CGDisplayMoveCursorToPoint(CGMainDisplayID(), point)
+        return Text("Hello, World!")
             .frame(maxWidth: .infinity, maxHeight: .infinity)
+        
     }
 }
 
